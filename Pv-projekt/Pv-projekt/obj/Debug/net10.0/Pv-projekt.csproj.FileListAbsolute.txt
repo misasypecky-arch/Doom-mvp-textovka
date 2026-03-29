@@ -1,0 +1,14 @@
+D:\rider-projects\Pv-projekt\Pv-projekt\bin\Debug\net10.0\Pv-projekt.exe
+D:\rider-projects\Pv-projekt\Pv-projekt\bin\Debug\net10.0\Pv-projekt.deps.json
+D:\rider-projects\Pv-projekt\Pv-projekt\bin\Debug\net10.0\Pv-projekt.runtimeconfig.json
+D:\rider-projects\Pv-projekt\Pv-projekt\bin\Debug\net10.0\Pv-projekt.dll
+D:\rider-projects\Pv-projekt\Pv-projekt\bin\Debug\net10.0\Pv-projekt.pdb
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\Pv-projekt.GeneratedMSBuildEditorConfig.editorconfig
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\Pv-projekt.AssemblyInfoInputs.cache
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\Pv-projekt.AssemblyInfo.cs
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\Pv-projekt.csproj.CoreCompileInputs.cache
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\Pv-projekt.dll
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\refint\Pv-projekt.dll
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\Pv-projekt.pdb
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\Pv-projekt.genruntimeconfig.cache
+D:\rider-projects\Pv-projekt\Pv-projekt\obj\Debug\net10.0\ref\Pv-projekt.dll
