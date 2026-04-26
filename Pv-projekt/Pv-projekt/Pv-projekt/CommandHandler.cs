@@ -102,7 +102,23 @@ public class CommandHandler
     private string CmdVezmi(Hrac hrac, string[] args)
     {
         if (args.Length == 0) return "Co chceš vzít?";
-        return $"Zvedl jsi {args[0]} a dal si ho do inventáře.";
+        string itemName = string.Join("_", args).ToLower(); // e.g. "rezava dyka" -> "rezava_dyka"
+
+        var mistnost = NajdiMistnostPodleId(hrac.CurrentRoomId);
+        if (mistnost == null) return "Chyba: Nacházíš se v neexistující místnosti!";
+
+    // Find item in room (case-insensitive match against item ID)
+        string foundItemId = mistnost.ItemsOnGround
+            .FirstOrDefault(i => i.ToLower() == itemName);
+
+        if (foundItemId == null)
+            return $"Žádný předmět '{string.Join(" ", args)}' tu nevidíš.";
+
+        // Remove from room and add to inventory
+        mistnost.ItemsOnGround.Remove(foundItemId);
+        hrac.Inventory.AddItem(new Item(foundItemId, foundItemId.Replace("_", " "), "", "misc"));
+
+        return $"Zvedl jsi {foundItemId.Replace("_", " ")} a dal sis ho do inventáře.";
     }
 
     private string CmdInventar(Hrac hrac)
