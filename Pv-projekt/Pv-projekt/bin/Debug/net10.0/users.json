@@ -1,0 +1,17 @@
+[
+  {
+    "Username": "karel",
+    "Password": "honza",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": []
+  }
+  
+]
