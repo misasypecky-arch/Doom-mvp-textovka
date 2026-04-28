@@ -1,0 +1,62 @@
+[
+  {
+    "Username": "karel",
+    "Password": "honza",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  },
+  {
+    "Username": "GET /performance HTTP/1.1",
+    "Password": "Host: 127.0.0.1:5000",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  },
+  {
+    "Username": "marek",
+    "Password": "david",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  }
+]
