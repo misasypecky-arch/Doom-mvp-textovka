@@ -1,0 +1,14 @@
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.exe
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.deps.json
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.runtimeconfig.json
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.dll
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.pdb
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.AssemblyInfoInputs.cache
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.AssemblyInfo.cs
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.csproj.CoreCompileInputs.cache
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.dll
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\refint\Pv_projekt_klient.dll
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.pdb
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.genruntimeconfig.cache
+C:\Users\marti\Downloads\Doom-mvp-textovka-main\Doom-mvp-textovka-main\Pv_projekt_klient\Pv_projekt_klient\obj\Debug\net9.0\ref\Pv_projekt_klient.dll
