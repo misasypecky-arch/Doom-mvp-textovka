@@ -18,7 +18,7 @@ Server musí běžet jako první, aby se k němu mohli klienti připojit.
 ---
 
 ## b)
-1.otevřte JetBrains Rider nebo visual studio 
+1. otevřte JetBrains Rider nebo visual studio 
 2. dejte otevřít projekt ze souboru
 3. otevřte soubor s projektem
 5. klikněte na slozku projekt.sln
