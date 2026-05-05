@@ -22,6 +22,8 @@ Server musí běžet jako první, aby se k němu mohli klienti připojit.
 5. klikněte na slozku projekt.sln
 6. dejte open/otevřít
 7. ve vs nebo rideru pak spusťte projekt a napise se jestli server bezi
+
+
 ---
 
 ## 2. Jak se připojit přes PuTTY (Návod pro testera)
