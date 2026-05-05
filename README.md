@@ -8,14 +8,14 @@
 ## 1. Jak spustit Server
 Server musí běžet jako první, aby se k němu mohli klienti připojit.
 
-** a)
+## a)
 1. Otevřete složku s projektem.
 2. Přejděte do složky se spustitelným souborem (např. `bin/Debug/net8.0/`).
 3. Spusťte soubor serveru 
 4. V konzoli serveru by se měla objevit zpráva: **"=== Server startuje ==="** nebo **"MUD server byl spusten."**
 5. **Důležité:** Server standardně naslouchá na portu **65525**.
 
-** b)
+## b)
 1.otevřte JetBrains Rider nebo visual studio 
 2. dejte otevřít projekt ze souboru
 3. otevřte soubor s projektem
