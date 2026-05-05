@@ -14,6 +14,8 @@ Server musí běžet jako první, aby se k němu mohli klienti připojit.
 3. Spusťte soubor serveru 
 4. V konzoli serveru by se měla objevit zpráva: **"=== Server startuje ==="** nebo **"MUD server byl spusten."**
 5. **Důležité:** Server standardně naslouchá na portu **65525**.
+   
+---
 
 ## b)
 1.otevřte JetBrains Rider nebo visual studio 
