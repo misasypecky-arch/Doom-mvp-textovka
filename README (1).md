@@ -7,17 +7,22 @@
 
 ## 1. Jak spustit Server
 Server musí běžet jako první, aby se k němu mohli klienti připojit.
-
+a}
 1. Otevřete složku s projektem.
 2. Přejděte do složky se spustitelným souborem (např. `bin/Debug/net8.0/`).
-3. Spusťte soubor serveru (např. `Pv_projekt.exe`).
+3. Spusťte soubor serveru 
 4. V konzoli serveru by se měla objevit zpráva: **"=== Server startuje ==="** nebo **"MUD server byl spusten."**
 5. **Důležité:** Server standardně naslouchá na portu **65525**.
-
+b}
+1.otevřte JetBrains Rider nebo visual studio 
+2. dejte otevřít projekt ze souboru
+3. otevřte soubor s projektem
+4. klikněte na slozku projekt.sln
+5. dejte open/otevřít
+6. ve vs nev rideru pak spusťte projekt a napise se jestli server bezi
 ---
 
 ## 2. Jak se připojit přes PuTTY (Návod pro testera)
-Pro nejlepší zážitek doporučujeme otevřít dvě okna PuTTY a přihlásit se dvěma různými jmény.
 
 1. Spusťte program **PuTTY**.
 2. Do pole **Host Name (or IP address)** napište: ip adresu vasho pocitace , kterou muzte zjistit pomoci konzole a komandu ipconfig
