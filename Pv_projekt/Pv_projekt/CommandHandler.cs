@@ -478,18 +478,25 @@ public class CommandHandler
         string info = $"--- {mistnost.Name} ---\r\n";
         info += mistnost.Description + "\r\n";
 
+        // --- PŘIDÁNO: Výpis možných východů ---
+        if (mistnost.Exits != null && mistnost.Exits.Any())
+        {
+            info += "Možné východy: " + string.Join(", ", mistnost.Exits.Keys) + "\r\n";
+        }
+        // --------------------------------------
+
         var ostatniHraci = HerniServer.PripojeniKlienti.Values
             .Where(s => s.Hrac != null && s.Hrac.CurrentRoomId == hrac.CurrentRoomId && s.Hrac != hrac)
             .Select(s => s.Hrac.Username)
             .ToList();
 
         if (ostatniHraci.Any())
-            info += "Vidíš zde další duše: " + string.Join(", ", ostatniHraci) + "\n";
+            info += "Vidíš zde další duše: " + string.Join(", ", ostatniHraci) + "\r\n";
 
         if (mistnost.ItemsOnGround != null && mistnost.ItemsOnGround.Any())
         {
             var itemy = mistnost.ItemsOnGround.Select(i => i.Replace("_", " "));
-            info += "Na zemi leží: " + string.Join(", ", itemy) + "\n";
+            info += "Na zemi leží: " + string.Join(", ", itemy) + "\r\n";
         }
 
         if (mistnost.NpcsPresent != null && mistnost.NpcsPresent.Any())
@@ -502,7 +509,7 @@ public class CommandHandler
                     : $"{npc.Name} {(npc.IsHostile ? "(nepřátelský)" : "(neutrální)")}");
 
             if (npcText.Any())
-                info += "Přítomné bytosti: " + string.Join(", ", npcText) + "\n";
+                info += "Přítomné bytosti: " + string.Join(", ", npcText) + "\r\n";
         }
 
         return info;
