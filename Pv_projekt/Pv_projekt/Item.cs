@@ -1,4 +1,4 @@
-﻿namespace Pv_projekt;
+namespace Pv_projekt;
 
 public class Item
 {
@@ -8,7 +8,7 @@ public class Item
     public string ItemType { get; set; } 
     public int Value { get; set; }
     
-    // PŘIDÁNO: Proměnná pro ID efektu
+    
     public string EffectId { get; set; }
 
     public Item(string itemId, string name, string description, string itemType, int value = 0, string effectId = "nic")
@@ -18,10 +18,10 @@ public class Item
         Description = description;
         ItemType = itemType;
         Value = value;
-        EffectId = effectId; // Např. "heal_30", "def_3", "revolver_rng"
+        EffectId = effectId; 
     }
 
-    // PŘIDÁNO: Funkce, která vykoná efekt přímo podle EffectId
+    
     public string VykonejEfekt(Hrac hrac)
     {
         if (EffectId == "nic") 
@@ -42,7 +42,7 @@ public class Item
         if (EffectId == "revolver_rng")
         {
             Random rng = new Random();
-            if (rng.Next(1, 7) == 1) // Ruská ruleta
+            if (rng.Next(1, 7) == 1) 
             {
                 hrac.Hp -= 50;
                 hrac.Faith -= 20;
