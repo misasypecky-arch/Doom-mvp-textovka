@@ -1,4 +1,4 @@
-﻿namespace Pv_projekt;
+namespace Pv_projekt;
 
 using System;
 using System.IO;
