@@ -1,0 +1,14 @@
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.exe
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.deps.json
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.runtimeconfig.json
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.dll
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\bin\Debug\net9.0\Pv_projekt_klient.pdb
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.GeneratedMSBuildEditorConfig.editorconfig
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.AssemblyInfoInputs.cache
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.AssemblyInfo.cs
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.csproj.CoreCompileInputs.cache
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.dll
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\refint\Pv_projekt_klient.dll
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.pdb
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\Pv_projekt_klient.genruntimeconfig.cache
+D:\rider-projects\pv-projekt3\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt_klient\obj\Debug\net9.0\ref\Pv_projekt_klient.dll
