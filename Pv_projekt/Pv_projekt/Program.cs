@@ -1,4 +1,4 @@
-﻿namespace Pv_projekt;
+namespace Pv_projekt;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,13 +13,13 @@ class Program
 
         try 
         {
-            // Načtení světa
+            
             string json = File.ReadAllText("mistnosti.json");
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
             HerniSvet.VsechnyMistnosti = JsonSerializer.Deserialize<List<Mistnost>>(json, options);
             Logger.Zaznamenej($"[System] Načteno {HerniSvet.VsechnyMistnosti.Count} místností.");
 
-            // Načtení uživatelů
+            
             SpravaUzivatelu.NactiUzivatele();
         }
         catch (Exception ex)
