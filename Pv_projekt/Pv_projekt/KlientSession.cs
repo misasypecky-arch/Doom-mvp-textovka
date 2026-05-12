@@ -1,4 +1,4 @@
-﻿namespace Pv_projekt;
+namespace Pv_projekt;
 
 using System;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 public class KlientSession
 {
     private CommandHandler _commandHandler;
-    public Hrac Hrac { get; private set; } // Změněno na property
+    public Hrac Hrac { get; private set; } 
     private readonly TcpClient _client;
     private readonly Guid _clientId;
     private readonly Action<Guid> _onDisconnect;
@@ -31,8 +31,8 @@ public class KlientSession
     {
         try
         {
-            // --- FÁZE PŘIHLÁŠENÍ ---
-            // Zacyklíme, dokud hráč nezadá správné údaje
+            
+            
             while (this.Hrac == null)
             {
                 await PosliZpravuAsync("Vítej v Pekle! Zadej své jméno:");
@@ -44,7 +44,7 @@ public class KlientSession
                 if (string.IsNullOrWhiteSpace(jmeno) || string.IsNullOrWhiteSpace(heslo))
                 {
                     await PosliZpravuAsync("Jméno i heslo musí být vyplněné. Zkus to znovu.\n");
-                    continue; // Skočí zpět na začátek cyklu
+                    continue; 
                 }
 
                 this.Hrac = SpravaUzivatelu.Autentizace(jmeno, heslo);
@@ -58,15 +58,15 @@ public class KlientSession
             await PosliZpravuAsync($"\n=== Vítej zpět, {Hrac.Username}! ===\n");
             Logger.Zaznamenej($"Hráč {Hrac.Username} se přihlásil.");
 
-            // Malá pauza, aby hráč stihl zaregistrovat přihlášení
+            
             await Task.Delay(1500);
 
-            // Automatické poslání nápovědy a popisu místnosti
+            
             string pomocText = _commandHandler.ProcessCommand(this.Hrac, "pomoc");
             string rozhledniText = _commandHandler.ProcessCommand(this.Hrac, "rozhledni");
             await PosliZpravuAsync($"{pomocText}\n\n{rozhledniText}");
 
-            // --- HERNÍ SMYČKA ---
+            
             while (_client.Connected)
             {
                 string prikaz = await _reader.ReadLineAsync();
