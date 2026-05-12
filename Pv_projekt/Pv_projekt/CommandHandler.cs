@@ -1,4 +1,4 @@
-﻿namespace Pv_projekt;
+namespace Pv_projekt;
 
 using System;
 using System.Linq;
@@ -18,7 +18,7 @@ public class CommandHandler
     {
         if (string.IsNullOrWhiteSpace(rawCommand)) return "";
 
-        // Pokud je hráč v dialogu, vstup řeší dialogový systém
+        
         if (hrac.IsInDialog)
         {
             return ZpracujDialog(hrac, rawCommand);
@@ -38,7 +38,7 @@ public class CommandHandler
             "pouzij" => CmdPouzij(hrac, args),
             "rekni" => CmdRekni(hrac, args),
             "krik" => CmdKrik(hrac, args),
-            "mluv" => CmdMluv(hrac, args), // PŘIDÁNO: Nový příkaz
+            "mluv" => CmdMluv(hrac, args), 
             "utoc" => CmdUtoc(hrac, args),
             "kup" => CmdKup(hrac, args),
             "status" => CmdStatus(hrac),
@@ -55,7 +55,7 @@ public class CommandHandler
                "- vezmi [předmět]\r\n" +
                "- pouzij [předmět]\r\n" +
                "- inventar\r\n" +
-               "- mluv [npc] (začne konverzaci s NPC v místnosti)\r\n" + // PŘIDÁNO
+               "- mluv [npc] (začne konverzaci s NPC v místnosti)\r\n" + 
                "- rekni [zpráva] (slyší jen lidé v místnosti)\r\n" +
                "- krik [zpráva] (slyší celé peklo)\r\n" +
                "- utoc [npc] = zahájí souboj\r\n" +
@@ -109,11 +109,11 @@ public class CommandHandler
 
         Npc npc = NajdiNpcPodleId(targetId);
 
-        // Zabráníme mluvení s nepřáteli, kteří by nás měli spíš chtít zabít
+        
         if (npc.IsHostile)
             return $"{npc.Name} tě sleduje krvežíznivým pohledem. Tady na povídání není čas, zkus 'utoc {targetId}'!";
 
-        // Aktivace dialogového stavu
+        
         hrac.IsInDialog = true;
         hrac.DialogNpcId = targetId;
 
@@ -140,21 +140,21 @@ public class CommandHandler
         string npcName = npc?.Name ?? "Neznámý";
         string odpovedNpc = "";
 
-        // Unikátní odpovědi podle NPC ID
+        
         if (npcId == "obchodnik_dusi")
         {
             if (volba == "1") odpovedNpc = $"{npcName}: Jsem jen ubohý obchodník, co se snaží přežít v tomhle žáru. Zajímají mě jen tvé duše.";
             else if (volba == "2") odpovedNpc = $"{npcName}: Sbírám krámy z mrtvých hříšníků a prodávám je dál. Až ukončíme rozhovor, zkus napsat 'kup lektvar' nebo 'kup stit'.";
             else odpovedNpc = $"{npcName}: Nerozumím ti. Vyber číslo 1, 2 nebo 3.";
         }
-        else // Fallback pro ostatní neutrální NPC
+        else 
         {
             if (volba == "1") odpovedNpc = $"{npcName}: To si raději nechám pro sebe.";
             else if (volba == "2") odpovedNpc = $"{npcName}: Jen tu tak existuji a sleduji, jak se tu všichni trápí.";
             else odpovedNpc = $"{npcName}: Cože? Zadej 1, 2 nebo 3.";
         }
 
-        // Znovu vykreslíme možnosti po odpovědi
+        
         return $"{odpovedNpc}\n\n" +
                "1 - Kdo jsi?\n" +
                "2 - Co tady děláš?\n" +
@@ -261,9 +261,9 @@ public class CommandHandler
         return "Vykřikl jsi do celého světa.";
     }
     
-    // --------------------------------------------------------
-    // M2 - SOUBOJOVÝ SYSTÉM
-    // --------------------------------------------------------
+    
+    
+    
     private string CmdUtoc(Hrac hrac, string[] args)
     {
         if (!hrac.IsInCombat)
@@ -378,11 +378,11 @@ public class CommandHandler
         }
         else if (akce == "utok")
         {
-            // 1. Zjistíme, jestli máš u sebe dýku (nebo jinou zbraň)
+            
             var zbran = hrac.Inventory.Items.FirstOrDefault(i => i.ItemType == "zbran");
-            int bonusZbran = zbran != null ? zbran.Value : 0; // Pokud máš zbraň, vezmi její Value (u dýky je to 5)
+            int bonusZbran = zbran != null ? zbran.Value : 0; 
 
-            // 2. Přičteme bonus k útoku
+            
             int dmgToNpc = Math.Max(1, (10 + bonusZbran) - hrac.CombatNpcDefense); 
             hrac.CombatNpcHp -= dmgToNpc;
 
@@ -430,9 +430,9 @@ public class CommandHandler
         hrac.CombatNpcDefense = 0;
     }
 
-    // --------------------------------------------------------
-    // M4 - OBCHODOVÁNÍ
-    // --------------------------------------------------------
+    
+    
+    
     private string CmdKup(Hrac hrac, string[] args)
     {
         if (args.Length == 0) return "Co chceš koupit? (Zkus 'kup lektvar' nebo 'kup stit')";
@@ -440,14 +440,14 @@ public class CommandHandler
 
         var mistnost = NajdiMistnostPodleId(hrac.CurrentRoomId);
         
-        // Zkontrolujeme, jestli je v místnosti obchodník
+        
         if (!mistnost.NpcsPresent.Contains("obchodnik_dusi"))
             return "Není tu nikdo, kdo by s tebou chtěl obchodovat.";
 
         int cena = 0;
         string itemId = "";
 
-        // Jednoduchý ceník napevno (Zde si můžete přidat další věci)
+        
         switch (itemName)
         {
             case "lektvar": cena = 20; itemId = "lektvar_zdravi"; break;
@@ -458,7 +458,7 @@ public class CommandHandler
         if (hrac.Money < cena)
             return $"Obchodník se chraplavě zasmál: 'Nemáš dost duší, ubožáku! Stojí to {cena}.'";
 
-        // Provedení platby a přidání předmětu
+        
         hrac.Money -= cena;
         hrac.Inventory.AddItem(new Item(itemId, itemId.Replace("_", " "), "Koupený předmět", "vybaveni", cena));
         
@@ -478,12 +478,12 @@ public class CommandHandler
         string info = $"--- {mistnost.Name} ---\r\n";
         info += mistnost.Description + "\r\n";
 
-        // --- PŘIDÁNO: Výpis možných východů ---
+        
         if (mistnost.Exits != null && mistnost.Exits.Any())
         {
             info += "Možné východy: " + string.Join(", ", mistnost.Exits.Keys) + "\r\n";
         }
-        // --------------------------------------
+        
 
         var ostatniHraci = HerniServer.PripojeniKlienti.Values
             .Where(s => s.Hrac != null && s.Hrac.CurrentRoomId == hrac.CurrentRoomId && s.Hrac != hrac)
@@ -514,7 +514,7 @@ public class CommandHandler
 
         return info;
     }
-    // A samotná metoda:
+    
     private string CmdBlackjack(Hrac hrac, string[] args)
     {
         if (!hrac.CurrentRoomId.Contains("kasino"))
@@ -525,8 +525,8 @@ public class CommandHandler
 
         Random rng = new Random();
     
-        // Jednoduchá simulace: Hráč vs Dealer
-        int hracKarty = rng.Next(15, 26); // Simulujeme součet karet
+        
+        int hracKarty = rng.Next(15, 26); 
         int dealerKarty = rng.Next(17, 24);
 
         string vysledek = $"--- BLACKJACK ---\nTvůj součet: {hracKarty}\nSoučet dealera: {dealerKarty}\n";
@@ -552,17 +552,16 @@ public class CommandHandler
         return HerniSvet.VsechnyMistnosti.FirstOrDefault(m => m.RoomId == id);
     }
 
-    // Pomocná metoda pro simulaci databáze NPC (M2/M4)
+    
     private Npc NajdiNpcPodleId(string id)
     {
-        // Tyto staty se obvykle načítají ze samostatného souboru npc.json, 
-        // ale pro MVP tu máme hardcoded hodnoty podle ID z mistnosti.json
+        
+        
         if (id == "obchodnik_dusi") return new Npc(id, "Obchodník Duší", false, true) { Hp = 100, Attack = 5, Defense = 5 };
         if (id == "nizsi_demon") return new Npc(id, "Nižší Démon", true, false) { Hp = 30, Attack = 12, Defense = 2 };
         if (id == "krupier_satan") return new Npc(id, "Krupiér Satan", true, false) { Hp = 150, Attack = 25, Defense = 8 };
         
-        // Defaultní fallback, pokud ID neznáme
+        
         return new Npc(id, "Neznámá bytost", true, false) { Hp = 20, Attack = 5, Defense = 1 };
     }
 }
-
