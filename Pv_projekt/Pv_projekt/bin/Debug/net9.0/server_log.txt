@@ -1,4 +1,0 @@
-[2026-05-05 19:53:37] === Server startuje ===
-[2026-05-05 19:53:38] [System] Načteno 5 místností.
-[2026-05-05 19:55:17] === Server startuje ===
-[2026-05-05 19:55:17] [System] Načteno 5 místností.
