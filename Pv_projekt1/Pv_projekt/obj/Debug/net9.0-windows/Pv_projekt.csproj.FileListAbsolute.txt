@@ -1,0 +1,16 @@
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\bin\Debug\net9.0-windows\mistnosti.json
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\bin\Debug\net9.0-windows\users.json
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\bin\Debug\net9.0-windows\Pv_projekt.exe
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\bin\Debug\net9.0-windows\Pv_projekt.deps.json
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\bin\Debug\net9.0-windows\Pv_projekt.runtimeconfig.json
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\bin\Debug\net9.0-windows\Pv_projekt.dll
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\bin\Debug\net9.0-windows\Pv_projekt.pdb
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\Pv_projekt.GeneratedMSBuildEditorConfig.editorconfig
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\Pv_projekt.AssemblyInfoInputs.cache
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\Pv_projekt.AssemblyInfo.cs
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\Pv_projekt.csproj.CoreCompileInputs.cache
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\Pv_projekt.dll
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\refint\Pv_projekt.dll
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\Pv_projekt.pdb
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\Pv_projekt.genruntimeconfig.cache
+D:\rider-projects\pvprojekt2\Doom-mvp-textovka-main\pv_projekt_2\Doom-mvp-textovka-main\Pv_projekt\Pv_projekt\obj\Debug\net9.0-windows\ref\Pv_projekt.dll

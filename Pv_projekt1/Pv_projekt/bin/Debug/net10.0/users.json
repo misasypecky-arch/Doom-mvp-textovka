@@ -1,0 +1,134 @@
+[
+  {
+    "Username": "karel",
+    "Password": "honza",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "IsInDialog": false,
+    "DialogNpcId": null,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  },
+  {
+    "Username": "GET /performance HTTP/1.1",
+    "Password": "Host: 127.0.0.1:5000",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "IsInDialog": false,
+    "DialogNpcId": null,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  },
+  {
+    "Username": "marek",
+    "Password": "david",
+    "Hp": 93,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "jeskyne_demona",
+    "QuestsCompleted": [],
+    "IsInCombat": true,
+    "IsInDialog": false,
+    "DialogNpcId": null,
+    "CombatNpcId": "nizsi_demon",
+    "CombatNpcName": "Ni\u017E\u0161\u00ED D\u00E9mon",
+    "CombatNpcHp": 22,
+    "CombatNpcAttack": 12,
+    "CombatNpcDefense": 2
+  },
+  {
+    "Username": "josef",
+    "Password": "karel",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "IsInDialog": false,
+    "DialogNpcId": null,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  },
+  {
+    "Username": "HELP",
+    "Password": "heslo",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "IsInDialog": false,
+    "DialogNpcId": null,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  },
+  {
+    "Username": "negr",
+    "Password": "negr",
+    "Hp": 100,
+    "Attack": 10,
+    "Defense": 5,
+    "Faith": 50,
+    "Money": 0,
+    "Inventory": {
+      "Items": []
+    },
+    "CurrentRoomId": "start",
+    "QuestsCompleted": [],
+    "IsInCombat": false,
+    "IsInDialog": false,
+    "DialogNpcId": null,
+    "CombatNpcId": null,
+    "CombatNpcName": null,
+    "CombatNpcHp": 0,
+    "CombatNpcAttack": 0,
+    "CombatNpcDefense": 0
+  }
+]
