@@ -1,0 +1,67 @@
+﻿[
+  {
+    "RoomId": "start",
+    "Name": "Brána zapomnění",
+    "Description": "Stojíš před obrovskou černou bránou. Vzduch páchne sírou a na zemi se povaluje rezavá dýka.",
+    "Exits": {
+      "sever": "krizovatka_1"
+    },
+    "ItemsOnGround": [
+      "rezava_dyka"
+    ],
+    "NpcsPresent": [],
+    "IsLocked": false
+  },
+  {
+    "RoomId": "krizovatka_1",
+    "Name": "Krvavá křižovatka",
+    "Description": "Cesta se zde dělí na tři strany. U kamene sedí podivný obchodník.",
+    "Exits": {
+      "jih": "start",
+      "vychod": "kasino_vstup",
+      "zapad": "jeskyne_demona"
+    },
+    "ItemsOnGround": [],
+    "NpcsPresent": [
+      "obchodnik_dusi"
+    ],
+    "IsLocked": false
+  },
+  {
+    "RoomId": "kasino_vstup",
+    "Name": "Vstup do Kasina",
+    "Description": "Slyšíš cinkání mincí a smích. Na severu jsou velké zlaté dveře vedoucí do VIP sekce.",
+    "Exits": {
+      "zapad": "krizovatka_1",
+      "sever": "vip_kasino"
+    },
+    "IsLocked": false,
+    "ItemsOnGround": [],
+    "NpcsPresent": []
+  },
+  {
+    "RoomId": "vip_kasino",
+    "Name": "VIP Místnost Kasina",
+    "Description": "Luxusní místnost pro ty nejbohatší hříšníky. Tady se hraje o všechno.",
+    "Exits": {
+      "jih": "kasino_vstup"
+    },
+    "IsLocked": true,
+    "RequiredKeyId": "vip_karta",
+    "ItemsOnGround": [],
+    "NpcsPresent": []
+  },
+  {
+    "RoomId": "jeskyne_demona",
+    "Name": "Démonova jeskyně",
+    "Description": "Temné a vlhké místo. V rohu vidíš svítící oči nižšího démona.",
+    "Exits": {
+      "vychod": "krizovatka_1"
+    },
+    "ItemsOnGround": [],
+    "NpcsPresent": [
+      "nizsi_demon"
+    ],
+    "IsLocked": false
+  }
+]

@@ -1,0 +1,66 @@
+﻿[
+  {
+      "RoomId": "start",
+      "Name": "Brána zapomnění",
+      "Description": "Otevřel jsi oči v pekle. Všude kolem je popel a horko. Na sever vede popraskaná kamenná cesta.",
+      "Exits": {
+        "sever": "krizovatka_1"
+      },
+      "ItemsOnGround": ["rezava_dyka", "stary_obvaz"],
+      "NpcsPresent": [],
+      "IsLocked": false,
+      "RequiredKeyId": null
+  },
+  {
+      "RoomId": "krizovatka_1",
+      "Name": "Krvavá křižovatka",
+      "Description": "Země je zde lepkavá. Na východě vidíš oslnivou neonovou záři pekelného kasina. Na západ vede tmavá jeskyně.",
+      "Exits": {
+        "jih": "start",
+        "vychod": "kasino_vstup",
+        "zapad": "jeskyne_demona"
+      },
+      "ItemsOnGround": [],
+      "NpcsPresent": ["obchodnik_dusi"],
+      "IsLocked": false,
+      "RequiredKeyId": null
+  },
+  {
+    "RoomId": "kasino_vstup",
+    "Name": "Pekelné Kasino (Vstup)",
+    "Description": "Hraje tu hlasitá hudba a démoni hrají o duše. Na sever vedou dveře do VIP sekce, které střeží vyhazovač.",
+    "Exits": {
+      "zapad": "krizovatka_1",
+      "sever": "kasino_vip"
+    },
+    "ItemsOnGround": ["dabelsky_revolver"],
+    "NpcsPresent": ["vyhazovač_behemot"],
+    "IsLocked": false,
+    "RequiredKeyId": null
+  },
+  {
+    "RoomId": "kasino_vip",
+    "Name": "VIP Místnost Kasina",
+    "Description": "Zde hrají jen ti nejbohatší hříšníci. Všude je cítit pach síry a drahých doutníků.",
+    "Exits": {
+      "jih": "kasino_vstup"
+    },
+    "ItemsOnGround": ["zlaty_pohar_krve"],
+    "NpcsPresent": ["lord_mammon"],
+    "IsLocked": true,
+    "RequiredKeyId": "vip_karta"
+  },
+  {
+      "RoomId": "jeskyne_demona",
+      "Name": "Doupě nižšího démona",
+      "Description": "Vzduch je tu těžký. V rohu sedí rozzuřený démon a hlídá VIP kartu do kasina.",
+      "Exits": {
+        "vychod": "krizovatka_1"
+      },
+      "ItemsOnGround": ["vip_karta"],
+      "NpcsPresent": ["nizsi_demon"],
+      "IsLocked": false,
+      "RequiredKeyId": null
+  }
+]
+  
