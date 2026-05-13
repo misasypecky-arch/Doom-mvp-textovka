@@ -560,6 +560,8 @@ public class CommandHandler
         if (id == "obchodnik_dusi") return new Npc(id, "Obchodník Duší", false, true) { Hp = 100, Attack = 5, Defense = 5 };
         if (id == "nizsi_demon") return new Npc(id, "Nižší Démon", true, false) { Hp = 30, Attack = 12, Defense = 2 };
         if (id == "krupier_satan") return new Npc(id, "Krupiér Satan", true, false) { Hp = 150, Attack = 25, Defense = 8 };
+        if (id == "vyhazovac_behemot")
+            return new Npc(id, "vyhazovac behemot", true, false) { Hp = 40, Attack = 15, Defense = 4 };
         
         
         return new Npc(id, "Neznámá bytost", true, false) { Hp = 20, Attack = 5, Defense = 1 };
