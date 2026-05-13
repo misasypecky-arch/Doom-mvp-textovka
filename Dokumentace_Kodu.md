@@ -1,6 +1,6 @@
 # Dokumentace a Vysvětlení Kódu - MUD Projekt
 
-Tento dokument slouží jako podrobný průvodce kódem tvého projektu. Obsahuje vysvětlení klíčových částí, logiku, kterou jsme použili, a seznam původních komentářů.
+
 
 ## 1. Architektura a Průběh Příkazu
 Hra funguje na principu **Command Patternu** (i když v jednodušší formě switch-case).
@@ -14,7 +14,7 @@ Logika kontroluje, zda směr (sever, jih...) existuje v seznamu východů aktuá
 - **Zamykání:** Pokud má místnost příznak `IsLocked = true`, kód projde hráčův `Inventory.Items` a hledá ID klíče (např. `vip_karta`). Pokud ho hráč nemá, nepustí ho dál.
 
 ### B. Soubojový Systém (`ProvedSoubojovyTah`)
-Tato část kódu je nejdůležitější pro hratelnost:
+
 - **Detekce zbraní:** Kód dynamicky kontroluje inventář. Pokud položka obsahuje slova jako *"dyka"*, *"mec"* nebo *"sekera"*, automaticky přičte +5 k útoku.
 - **NPC Turn:** Pokud NPC přežije hráčův útok, ihned útočí zpět. Pokud hráč zemře (HP <= 0), je teleportován do startovní místnosti a jeho HP se resetuje.
 
@@ -26,7 +26,7 @@ Když hráč napíše `mluv [npc]`, přepne se do stavu `IsInDialog`. V tomto st
 Jednoduchá implementace hazardu. Hráč sází 10 duší. Pokud má součet karet vyšší než dealer (ale ne přes 21), vyhrává dvojnásobek.
 
 ## 3. Původní Komentáře (Odstraněno z kódu)
-Zde je seznam důležitých poznámek, které byly v kódu pro vývojáře:
+
 - *Pokud je hráč v dialogu, vstup řeší dialogový systém* - Důležité pro odlišení herních příkazů od povídání.
 - *Bonus dýky se automaticky přičte* - Vysvětlení, proč hráč dává větší damage, i když nikde nic "nevybavil".
 - *Uloží postup a bezpečně odpojí* - Funkce příkazu `ukonci`.
@@ -37,5 +37,4 @@ Po analýze kódu můžu potvrdit:
 2. **Příkazy:** Všechny základní příkazy (`rozhledni`, `jdi`, `status`) jsou implementovány a ošetřeny proti prázdným vstupům.
 3. **Kompatibilita:** Kód je čisté C# bez specifických knihoven, které by vyžadovaly .NET 10. Bude to fungovat na **.NET 8 i .NET 9**.
 
----
-*Dokumentace vygenerována pro projekt SPŠE Ječná.*
+
