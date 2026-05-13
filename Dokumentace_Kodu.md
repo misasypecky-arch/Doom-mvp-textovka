@@ -31,10 +31,6 @@ Jednoduchá implementace hazardu. Hráč sází 10 duší. Pokud má součet kar
 - *Bonus dýky se automaticky přičte* - Vysvětlení, proč hráč dává větší damage, i když nikde nic "nevybavil".
 - *Uloží postup a bezpečně odpojí* - Funkce příkazu `ukonci`.
 
-## 4. Kontrola Funkčnosti (Závěr)
-Po analýze kódu můžu potvrdit:
-1. **JSON Data:** Jsou správně strukturovaná, místnosti na sebe navazují.
-2. **Příkazy:** Všechny základní příkazy (`rozhledni`, `jdi`, `status`) jsou implementovány a ošetřeny proti prázdným vstupům.
-3. **Kompatibilita:** Kód je čisté C# bez specifických knihoven, které by vyžadovaly .NET 10. Bude to fungovat na **.NET 8 i .NET 9**.
+
 
 
